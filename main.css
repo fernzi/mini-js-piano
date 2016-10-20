@@ -1,0 +1,97 @@
+body {
+  background-color: #333;
+  background-image: url(texture.png);
+  color: white;
+}
+
+a:focus, a:hover {
+  color: white;
+}
+
+h1 {
+  font-family: Pacifico, Helvetica, Arial, sans-serif;
+  text-shadow: 0 .3rem hsl(278, 45%, 38%);
+}
+
+h1 a:hover, h1 a:focus {
+  text-shadow: 0 .3rem #aaa;
+}
+
+.glow {
+  text-shadow: 0 0 1rem rgba(255,255,255,.3);
+}
+
+.header {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+#piano {
+  text-align: center;
+}
+
+.octave {
+  position: relative;
+  display: inline-block;
+}
+
+.key {
+  float: left;
+  border-bottom: .6rem solid rgba(0,0,0,.3);
+  cursor: pointer;
+}
+.key:active {
+  border-bottom-width: .2rem;
+}
+
+.key.white {
+  width: 8rem;
+  height: 23rem;
+  background-color: #fafafa;
+  border-left: .1rem solid rgba(0,0,0,.4);
+  border-right: .1rem solid rgba(0,0,0,.4);
+  box-shadow: inset 0 .7rem .9rem -.7rem rgba(0,0,0,0.7);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.key.black {
+  position: absolute;
+  width: 6rem;
+  height: 15rem;
+  background-color: #9b4dca;
+  border-radius: 0 0 .5rem .5rem;
+  box-shadow: inset 0 .7rem .9rem -.7rem rgba(0,0,0,.7),
+              0 .1rem .7rem rgba(0,0,0,.4);
+}
+
+.flats :nth-child(1) {
+  margin-left: 5rem;
+}
+.flats :nth-child(2) {
+  margin-left: 13rem;
+}
+.flats :nth-child(3) {
+  margin-left: 29rem;
+}
+.flats :nth-child(4) {
+  margin-left: 37rem;
+}
+.flats :nth-child(5) {
+  margin-left: 45rem;
+}
+
+.footer {
+  padding-top: .8em;
+  text-align: center;
+}
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.github-fork-ribbon {
+  box-sizing: content-box;
+}
+a.github-fork-ribbon:before {
+  background-color: #9b4dca;
+}

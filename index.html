@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+
+  <title>Mini JS Piano</title>
+  <meta name="description" content="Simple piano using HTML and JavaScript"/>
+
+  <meta name="theme-color" content="#333"/>
+  <link rel="icon" sizes="192x192" href="icon.png"/>
+  <link rel="apple-touch-icon" sizes="192x192" href="icon.png"/>
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:300,300i,700,700i"/>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+        integrity="sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw="
+        crossorigin="anonymous"/>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css"
+        integrity="sha256-pb5/5s6O4c/NyyYG+TVwQVJjJjC2ajZm/7//hl9OwMg="
+        crossorigin="anonymous"/>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css"
+        integrity="sha256-SGzcZn7Mfu9QtxeHBw1YYakeJVgpBQtUox7z/+ko930="
+        crossorigin="anonymous" />
+</head>
+<body>
+  <header class="container header">
+    <h1><a href="/">Mini JS Piano</a></h1>
+    <p class="glow">Simple piano using HTML and JavaScript</p>
+  </header>
+  <main id="piano" class="container">
+    <div class="octave">
+      <div id="C4" class="key white" data-freq="261.626"></div>
+      <div id="D4" class="key white" data-freq="293.665"></div>
+      <div id="E4" class="key white" data-freq="329.628"></div>
+      <div id="F4" class="key white" data-freq="349.228"></div>
+      <div id="G4" class="key white" data-freq="391.995"></div>
+      <div id="A4" class="key white" data-freq="440"></div>
+      <div id="B4" class="key white" data-freq="493.883"></div>
+      <div class="flats">
+        <div id="CS4" class="key black" data-freq="277.183"></div>
+        <div id="DS4" class="key black" data-freq="311.127"></div>
+        <div id="FS4" class="key black" data-freq="369.994"></div>
+        <div id="GS4" class="key black" data-freq="415.305"></div>
+        <div id="AS4" class="key black" data-freq="466.164"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="container footer">
+    <small class="glow">Made with ♥ by <a rel="author" href="https://github.com/franz-mokka">Franz Zapata</a></small>
+  </footer>
+  <a class="github-fork-ribbon" href="https://github.com/franz-mokka/mini-js-piano" title="Fork me on GitHub">Fork me on GitHub</a>
+
+  <script src="https://cdn.jsdelivr.net/umbrella/2.6.7/umbrella.min.js"
+          integrity="sha256-a64bPjtNFtZczuMJgFEywQZFzCMCDJTqFOYJLrTkPU8="
+          crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
