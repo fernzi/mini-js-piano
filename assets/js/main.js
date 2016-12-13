@@ -1,27 +1,29 @@
-var context = new AudioContext();
+const context = new AudioContext();
 
-var oscillator = context.createOscillator();
+const oscillator = context.createOscillator();
 
-var gain = context.createGain();
+const gain = context.createGain();
 gain.gain.value = 0;
 
 oscillator.connect(gain);
-gain.connect(context.destination)
+gain.connect(context.destination);
 
 oscillator.start(0);
 
-u('.key').handle('mousedown mouseenter', function(e) {
+u('.key').handle('mousedown mouseenter', e => {
+  const freq = parseFloat(u(e.currentTarget).data('freq'));
   if (e.buttons === 1) {
-    oscillator.frequency.value = u(e.currentTarget).data('freq') * 1;
+    oscillator.frequency.value = freq;
     gain.gain.value = 1;
   }
 });
 
-u('.key').handle('touchstart', function(e) {
-  oscillator.frequency.value = u(e.currentTarget).data('freq') * 1;
+u('.key').handle('touchstart', e => {
+  const freq = parseFloat(u(e.currentTarget).data('freq'));
+  oscillator.frequency.value = freq;
   gain.gain.value = 1;
 });
 
-u('.key').handle('mouseup mouseout touchend', function(e) {
+u('.key').handle('mouseup mouseout touchend', e => {
   gain.gain.value = 0;
 });
