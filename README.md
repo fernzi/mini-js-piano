@@ -19,8 +19,8 @@ Mini JS Piano achieves its tininess with the help of the following projects:
  * [Milligram][5], a minimalist CSS framework.
  * [Umbrella JS][6], a tiny library for DOM manipulation, events and AJAX.
 
-[1]: https://franz-mokka.github.io/mini-js-piano/
-[2]: https://github.com/franz-mokka
+[1]: https://franzzapata.github.io/mini-js-piano/
+[2]: https://github.com/franzzapata
 [3]: https://opensource.org/licenses/MIT
 [4]: https://necolas.github.io/normalize.css/
 [5]: https://milligram.github.io/
